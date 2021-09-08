@@ -1,10 +1,3 @@
-//
-//  TodoList.m
-//  Labb 3. Todo app
-//
-//  Created by Victor Jonasson on 2021.
-//  Copyright © 2021 Victor Jonasson. All rights reserved.
-//
 
 #import "TodoList.h"
 #import "Todo.h"
@@ -22,7 +15,7 @@
     }
     return self;
 }
-
+//skapa ett object
 - (void)createTodo:(NSString*) name {
         Todo *todo = [[Todo alloc] initWithName:name];
         [_todoItems addObject:todo];
@@ -32,17 +25,17 @@
     return _todoItems.count;
 }
 
-
+//convertera och returnera todos-array
 - (NSMutableArray *)convertTodosToArr{
     NSMutableArray *array = [[NSMutableArray alloc]init];
-    
+
     for (Todo *todo in self.todoItems) {
         [array addObject:[todo getTodo]];
     }
     
     return array;
 }
-
+//convertera och returnera färdig-array
 - (NSMutableArray *)convertCompletedToArr{
     NSMutableArray *array = [[NSMutableArray alloc]init];
     
@@ -52,7 +45,7 @@
     
     return array;
 }
-
+//convertera och returnera favorit-array
 - (NSMutableArray *)convertImportantToArr{
     NSMutableArray *array = [[NSMutableArray alloc]init];
     
@@ -62,7 +55,5 @@
     
     return array;
 }
-
-
 
 @end

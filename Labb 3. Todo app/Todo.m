@@ -1,15 +1,8 @@
-//
-//  Todo.m
-//  Labb 3. Todo app
-//
-//  Created by Victor Jonasson on 2021.
-//  Copyright © 2021 Victor Jonasson. All rights reserved.
-//
 
 #import "Todo.h"
 
 @implementation Todo
-
+//sakapa en todo och returnera
 - (instancetype)initWithName:(NSString*)name
 {
     self = [super init];
@@ -22,11 +15,5 @@
 - (NSString *)getTodo {
     return self.name;
 }
-
-
-
-
-
-
 
 @end

@@ -1,10 +1,3 @@
-//
-//  Singleton.m
-//  Labb 3. Todo app
-//
-//  Created by Victor Jonasson on 2021-01-21.
-//  Copyright © 2021 Victor Jonasson. All rights reserved.
-//
 
 #import "Singleton.h"
 
@@ -16,7 +9,6 @@ static Singleton *instance = nil;
     if (instance == nil) {
         instance = [[Singleton alloc] init];
     }
-    
     return instance;
 }
 

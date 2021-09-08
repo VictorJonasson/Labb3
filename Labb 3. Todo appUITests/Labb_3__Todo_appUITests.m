@@ -1,10 +1,3 @@
-//
-//  Labb_3__Todo_appUITests.m
-//  Labb 3. Todo appUITests
-//
-//  Created by Victor Jonasson on 2021.
-//  Copyright © 2021 Victor Jonasson. All rights reserved.
-//
 
 #import <XCTest/XCTest.h>
 
